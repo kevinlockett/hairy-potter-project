@@ -1,6 +1,7 @@
 // Imports go first
 import { makePottery } from './PotteryWheel.js'
 import { firePottery } from './Kiln.js'
+import { toSellOrNotToSell } from './PotteryCatalog.js'
 
 
 // Make 5 pieces of pottery at the wheel
@@ -19,7 +20,11 @@ let firedPitcher = firePottery(pitcher, 1900)
 let firedPot = firePottery(pot, 2200)
 
 // Determine which ones should be sold, and their price
-
+toSellOrNotToSell(firedMug)
+toSellOrNotToSell(firedPlate)
+toSellOrNotToSell(firedChalice)
+toSellOrNotToSell(firedPitcher)
+toSellOrNotToSell(firedPot)
 
 // Invoke the component function that renders the HTML list
 
